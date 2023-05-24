@@ -24,7 +24,7 @@ module.exports = (config) => {
       supportsTablet: true,
     },
     android: {
-      packageIdentifier: "com.derkjan.issueeasenv",
+      package: "com.derkjan.issueeasenv",
       adaptiveIcon: {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#ffffff",
