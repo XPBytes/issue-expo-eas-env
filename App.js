@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>{process.env.MY_TEST_VALUE}</Text>
+      <Text style={{ color: 'red' }}>Value of MY_TEST_VALUE is: "{process.env.MY_TEST_VALUE}"</Text>
       <StatusBar style="auto" />
     </View>
   );
