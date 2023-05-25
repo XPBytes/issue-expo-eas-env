@@ -1,4 +1,6 @@
-require("dotenv").config();
+import path from 'path'
+
+require('dotenv').config({ path: path.join(__dirname, '.env') })
 
 console.log("app.config.js ENV", process.env.MY_TEST_VALUE);
 if (!process.env.MY_TEST_VALUE) {
