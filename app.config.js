@@ -1,6 +1,6 @@
-import path from 'path'
+import path from "path";
 
-require('dotenv').config({ path: path.join(__dirname, '.env') })
+require("dotenv").config({ path: path.join(__dirname, ".env") });
 
 console.log("app.config.js ENV", process.env.MY_TEST_VALUE);
 if (!process.env.MY_TEST_VALUE) {
@@ -39,6 +39,12 @@ module.exports = (config) => {
       eas: {
         projectId: "7437a1bf-7319-4a91-837c-cd448fc992b2",
       },
+    },
+    updates: {
+      url: "https://u.expo.dev/7437a1bf-7319-4a91-837c-cd448fc992b2",
+    },
+    runtimeVersion: {
+      policy: "sdkVersion",
     },
   };
 };
